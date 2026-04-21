@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="そのリノベ、ちょっと待て。へのお問い合わせはこちらからどうぞ。">
+  <title>お問い合わせ | そのリノベ、ちょっと待て。</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="site-title"><a href="index.html">そのリノベ、ちょっと待て。</a></div>
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a href="index.html">すべて</a>
+      <a href="index.html#rinobe">リノベ</a>
+      <a href="index.html#kuchikomi">口コミ</a>
+      <a href="index.html#kenko">健康と家づくり</a>
+      <a href="index.html#diary">ハルマム実録日記blog</a>
+    </nav>
+  </div>
+</header>
+
+<article class="post-layout">
+  <nav class="breadcrumb" aria-label="パンくず">
+    <a href="index.html">ホーム</a>
+    <span>›</span>
+    <span>お問い合わせ</span>
+  </nav>
+
+  <header class="post-header">
+    <h1 class="post-main-title">お問い合わせ</h1>
+    <hr class="post-divider">
+  </header>
+
+  <div class="post-content">
+    <p>ご質問・ご意見・取材のご依頼など、お気軽にお問い合わせください。<br>通常2〜3営業日以内にご返信いたします。</p>
+
+    <p style="text-align:center;margin:2rem 0;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfovxSH3gEe4t-8z4B-WzmQkwTh90JEvu-E0BwdnMGRWu5bUA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="submit-btn" style="display:inline-block;text-decoration:none;">Googleフォームで送信する →</a>
+    </p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" style="display:none;">
+      <div class="form-group">
+        <label for="name">お名前 <span class="required">*</span></label>
+        <input type="text" id="name" name="name" required placeholder="例：山田 花子">
+      </div>
+      <div class="form-group">
+        <label for="email">メールアドレス <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required placeholder="例：example@email.com">
+      </div>
+      <div class="form-group">
+        <label for="subject">件名</label>
+        <input type="text" id="subject" name="subject" placeholder="例：記事について">
+      </div>
+      <div class="form-group">
+        <label for="message">メッセージ <span class="required">*</span></label>
+        <textarea id="message" name="message" required rows="6" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">送信する</button>
+    </form>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-title">そのリノベ、ちょっと待て。</div>
+      <p class="footer-desc">失敗も後悔も全部シェア！二世帯リノベ経験ママが伝えるリアルな家づくりの話。</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">トップ</a>
+      <a href="privacy-policy.html">プライバシーポリシー</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </div>
+  <div class="footer-copy">© 2026 そのリノベ、ちょっと待て。</div>
+</footer>
+
+<style>
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+.form-group {
+  margin-bottom: 1.5rem;
+}
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+.required {
+  color: #e05a5a;
+  margin-left: 4px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #e8e0d8;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  transition: border-color .2s;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #c0855a;
+}
+.submit-btn {
+  background: #c0855a;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background .2s;
+}
+.submit-btn:hover {
+  background: #9e6540;
+}
+</style>
+</body>
+</html>
